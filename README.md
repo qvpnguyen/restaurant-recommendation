@@ -2,8 +2,6 @@
 
 A simple command-line Python project that recommends restaurants based on the user's input of a food type.
 
-**License:** MIT
-
 ---
 
 ## 🛠️ Project Structure
@@ -44,3 +42,14 @@ This project uses **only standard Python libraries**, so no extra installation i
 
 ```bash
 python script.py
+```
+---
+
+## 📫 Contact
+Created by Patrick Nguyen
+
+---
+
+## 🪪 License
+This project is licensed under the MIT License.\
+See the [LICENSE](./LICENSE) file for details.
