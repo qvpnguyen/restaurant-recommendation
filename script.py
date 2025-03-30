@@ -36,14 +36,29 @@ while not done:
                 places = [place for place in restaurant_data if place[0] == matches[0]]
 
                 if places:
-                    print(f"\nFound {len(places)} restaurants for {food_type}:")
+                    print(f"\nFound {len(places)} {matches[0].capitalize()} restaurants. The restaurants are as follows:")
                     for place in places:
-                        print(place)
-                    done = True
-                    break
+                        print(f"""
+------------------------------
+
+Name: {place[1]}
+Price: {place[2]}/5
+Rating: {place[3]}/5
+Address: {place[4]}""")
+
+                    type_decision = input("Do you want to find other restaurants? Enter 'y' for yes and 'n' for no.\n> ")
+                    if type_decision.lower() == 'y':
+                        break
+                    elif type_decision.lower() == 'n':
+                        done = True
+                        break
+                    else:
+                        print("Invalid input. Please try again.")
 
             elif type_decision.lower() == 'n':
                 break
+            else:
+                print("Invalid input. Please try again.")
 
         elif len(matches) == 0:
             print(f"No matches found starting with {food_type}. Please try again.")
