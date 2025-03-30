@@ -66,4 +66,4 @@ Address: {place[4]}""")
     else:
         print("Invalid input. Please try again.")
 
-print("Thank you!")
+print("Goodbye!")
